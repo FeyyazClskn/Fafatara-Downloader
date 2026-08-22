@@ -1,9 +1,9 @@
 🦋 Fafatara Downloader
 > Simple, fast and modern YouTube downloader for Windows.
-🇹🇷 Türkçe  
+🇹🇷 Türkçe
 🇬🇧 English
 ---
-🇹🇷 Türkçe
+Türkçe
 Fafatara Downloader, YouTube bağlantılarından müzik, ses ve video içeriklerini kolayca indirmenizi sağlayan sade ve kullanışlı bir Windows uygulamasıdır.
 ✨ Özellikler
 🎵 Ses ve müzik indirme  
@@ -35,7 +35,6 @@ Uygulamayı yalnızca indirme hakkına sahip olduğunuz veya indirilmesine izin 
 🇬🇧 English bölümüne geç
 ---
 English
-🇬🇧 English
 Fafatara Downloader is a simple and user-friendly Windows application for downloading music, audio and video content from YouTube URLs.
 ✨ Features
 🎵 Audio and music downloads  
