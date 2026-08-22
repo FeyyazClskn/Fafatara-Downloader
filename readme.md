@@ -1,183 +1,174 @@
-🦋 Fafatara Downloader
-Modern, hızlı ve kullanımı kolay YouTube video, müzik ve oynatma listesi indirme uygulaması.
+🎵 Fafatara Downloader
+Fafatara Downloader, YouTube üzerinden müzik ve ses içeriklerini kolayca indirmenizi sağlayan, kullanımı basit ve hızlı bir masaüstü uygulamasıdır.
+🌐 Language / Dil
+🇹🇷 Türkçe • 🇬🇧 English
+---
+---
+🇹🇷 Türkçe
+🇬🇧 English'e geç
+📌 Proje Hakkında
+Fafatara Downloader, YouTube'daki müzik ve ses içeriklerini kolayca indirmenizi amaçlayan bir masaüstü uygulamasıdır.
+Uygulamanın temel amacı, komut satırıyla uğraşmadan YouTube bağlantısını uygulamaya yapıştırarak indirme işlemini mümkün olduğunca basit hale getirmektir.
 ✨ Özellikler
-🎬 MP4 video indirme
-🎵 MP3 müzik indirme
-📋 YouTube oynatma listesi indirme
-📁 Oynatma listelerini ayrı klasörlerde saklama
-⚡ Yüksek kaliteli video indirme
-🎧 MP3 kalite seçimi
-📊 Gerçek zamanlı indirme yüzdesi
-📂 İndirme konumu seçme
-🕘 Önceki indirmeleri görüntüleme
-📋 Daha önce indirilen oynatma listelerini görüntüleme
-⚙️ İndirme ayarlarını özelleştirme
-🦋 Modern ve kullanıcı dostu arayüz
-🪟 Windows desteği
-🐧 Linux desteği
+🎵 YouTube videolarından ses indirme
+🔗 YouTube bağlantısını kolayca yapıştırma
+⚡ Basit ve hızlı kullanım
+💻 Windows masaüstü desteği
+📦 Kurulum gerektirmeyen Portable kullanım
+🎧 İndirilen ses dosyalarını kolayca kaydetme
+🖥️ Kullanıcı dostu arayüz
 ---
-🪟 Windows
-Windows sürümünü GitHub Releases bölümünden indirebilirsiniz.
-Arşivi çıkardıktan sonra:
-    Fafatara Downloader.exe
-
-dosyasını çalıştırmanız yeterlidir.
-Python, pip veya ek bir kurulum gerektirmeden hazırlanmış sürüm için GitHub Releases bölümündeki hazır paketi kullanabilirsiniz.
+🚀 Kurulum
+Yöntem 1 — Hazır `.exe` dosyasını kullanma
+Uygulamayı kaynak kodundan derlemek istemiyorsanız, GitHub Releases bölümündeki hazır sürümü kullanabilirsiniz.
+GitHub'daki Releases bölümüne gidin.
+En son sürümü açın.
+`.zip` dosyasını indirin.
+ZIP dosyasını bilgisayarınıza çıkartın.
+Klasör içerisindeki:
+```text
+Fafatara-Downloader.exe
+```
+dosyasını çalıştırın.
+> Uygulama Portable olarak çalışıyorsa ayrıca kurulum yapmanıza gerek yoktur.
 ---
-🐧 Linux
-Linux sürümünü GitHub Releases bölümünden indirebilirsiniz.
-Arşivi çıkardıktan sonra uygulamanın bulunduğu klasöre girin.
-Terminal üzerinden:
-    ./Fafatara\ Downloader/Fafatara\ Downloader
-
-komutuyla çalıştırabilirsiniz.
-Eğer çalıştırma izni verilmemişse:
-    chmod +x "Fafatara Downloader/Fafatara Downloader"
-
-ardından:
-    ./Fafatara\ Downloader/Fafatara\ Downloader
-
-komutunu kullanabilirsiniz.
+🛠️ Kaynak Kodundan Çalıştırma
+Projeyi geliştirmek veya kaynak kodundan çalıştırmak istiyorsanız:
+1. Repoyu klonlayın
+```bash
+git clone https://github.com/USERNAME/Fafatara-Downloader.git
+```
+Ardından proje klasörüne girin:
+```bash
+cd Fafatara-Downloader
+```
+2. Gerekli bağımlılıkları yükleyin
+Projede kullanılan Python paketlerini yüklemek için:
+```bash
+pip install -r requirements.txt
+```
+3. Uygulamayı çalıştırın
+```bash
+python main.py
+```
+> `main.py` yerine projenizdeki ana Python dosyasının adını kullanın.
 ---
-🛠️ Geliştirme
-Gereksinimler
-Python 3.11
-FFmpeg
-Deno
-Git
-Projeyi klonlama
-    git clone https://github.com/KULLANICI_ADIN/Fafatara-Downloader.git
-
-Proje klasörüne girin:
-    cd Fafatara-Downloader
-
+🎯 Kullanım
+YouTube'dan indirmek istediğiniz videonun bağlantısını kopyalayın.
+Fafatara Downloader'ı açın.
+YouTube bağlantısını ilgili alana yapıştırın.
+İndirme seçeneğini başlatın.
+İndirme işleminin tamamlanmasını bekleyin.
+Oluşturulan ses dosyasına seçtiğiniz çıktı klasöründen ulaşabilirsiniz.
 ---
-🐍 Sanal ortam oluşturma
-Windows
-    python -m venv .venv
-
-Sanal ortamı etkinleştirin:
-    .venv\Scripts\activate
-
-Linux
-    python3 -m venv .venv
-
-Sanal ortamı etkinleştirin:
-    source .venv/bin/activate
-
+⚠️ Yasal Uyarı
+Bu uygulama teknik bir araçtır.
+İndirdiğiniz içeriklerin kullanımından kullanıcı sorumludur. YouTube veya içerik sahibinin kullanım koşulları ve telif hakları dikkate alınmalıdır.
+Uygulamayı yalnızca indirme hakkına sahip olduğunuz veya indirilmesine izin verilen içerikler için kullanmanız önerilir.
 ---
-📦 Bağımlılıkları yükleme
-Sanal ortam aktifken:
-    python -m pip install -r requirements.txt
-
+📦 Proje Yapısı
+```text
+Fafatara-Downloader/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+├── assets/
+│   └── ...
+└── ...
+```
+Projenin yapısı sürümlere göre değişebilir.
 ---
-▶️ Uygulamayı çalıştırma
-Windows:
-    python main.py
-
-Linux:
-    python3 main.py
-
+🤝 Katkıda Bulunma
+Projeyi geliştirmek, hata bildirmek veya yeni özellik önermek isterseniz GitHub üzerinden:
+Issue oluşturabilir,
+Pull Request gönderebilir,
+Geliştirme önerilerinizi paylaşabilirsiniz.
+Katkılarınızı bekliyoruz! ❤️
 ---
-🏗️ Windows Build
-Windows üzerinde:
-    build_windows.bat
-
-komutunu çalıştırın.
-Build tamamlandığında:
-    dist/
-    └── Fafatara Downloader/
-        └── Fafatara Downloader.exe
-
-oluşturulur.
+🇬🇧 English
+🇹🇷 Türkçe'ye geç
+📌 About the Project
+Fafatara Downloader is a simple desktop application designed to make downloading music and audio content from YouTube easier.
+The main goal of the project is to provide a simple way to download audio without having to deal with command-line tools. Simply paste a YouTube URL into the application and start the download.
+✨ Features
+🎵 Download audio from YouTube videos
+🔗 Easy YouTube URL input
+⚡ Simple and fast workflow
+💻 Windows desktop support
+📦 Portable usage without installation
+🎧 Easy access to downloaded audio files
+🖥️ User-friendly interface
 ---
-🏗️ Linux Build
-Linux üzerinde:
-    chmod +x build_linux.sh
-
-ardından:
-    ./build_linux.sh
-
-Build tamamlandığında:
-    dist/
-    └── Fafatara Downloader/
-        └── Fafatara Downloader
-
-oluşturulur.
+🚀 Installation
+Method 1 — Using the Ready-to-Use `.exe`
+If you don't want to build the project from source, you can use the latest pre-built version from the GitHub Releases section.
+Go to the Releases section on GitHub.
+Open the latest release.
+Download the `.zip` file.
+Extract the ZIP file.
+Run:
+```text
+Fafatara-Downloader.exe
+```
+> If you are using the Portable version, no additional installation is required.
 ---
-🤖 GitHub Actions
-Proje GitHub'a gönderildiğinde GitHub Actions otomatik olarak Windows ve Linux sürümlerini oluşturabilir.
-Workflow dosyası:
-    .github/
-    └── workflows/
-        └── build.yml
-
-GitHub'daki Actions sekmesinden build işlemlerini takip edebilirsiniz.
-Build başarılı olduğunda Windows ve Linux paketleri Actions içerisindeki Artifacts bölümünden alınabilir.
+🛠️ Running From Source
+If you want to develop the project or run it directly from the source code:
+1. Clone the repository
+```bash
+git clone https://github.com/USERNAME/Fafatara-Downloader.git
+```
+Then enter the project directory:
+```bash
+cd Fafatara-Downloader
+```
+2. Install the required dependencies
+Install the Python packages required by the project:
+```bash
+pip install -r requirements.txt
+```
+3. Run the application
+```bash
+python main.py
+```
+> Replace `main.py` with the name of the project's main Python file if it is different.
 ---
-📁 Proje Yapısı
-    Fafatara-Downloader/
-    │
-    ├── main.py
-    ├── downloader.py
-    ├── requirements.txt
-    ├── logo.ico
-    ├── logo.png
-    │
-    ├── build_windows.bat
-    ├── build_linux.sh
-    │
-    ├── README.md
-    ├── LICENSE
-    ├── .gitignore
-    │
-    └── .github/
-        └── workflows/
-            └── build.yml
-
+🎯 How to Use
+Copy the URL of the YouTube video you want to download.
+Open Fafatara Downloader.
+Paste the YouTube URL into the input field.
+Start the download.
+Wait for the download process to finish.
+Your downloaded audio file will be available in the selected output directory.
 ---
-📥 İndirme Klasörü
-Fafatara Downloader varsayılan olarak kullanıcının Downloads klasörü içerisinde:
-    Fafatara Downloader
-
-adında bir klasör oluşturur.
-Örneğin Windows'ta:
-    C:\Users\KullanıcıAdı\Downloads\Fafatara Downloader
-
-Oynatma listeleri ise kendi adlarıyla ayrı klasörlerde saklanır:
-    Fafatara Downloader/
-    │
-    ├── Video 1.mp4
-    ├── Video 2.mp4
-    ├── Müzik.mp3
-    │
-    └── Playlist Adı/
-        ├── Video A.mp4
-        ├── Video B.mp4
-        └── Video C.mp4
-
-Oynatma listesindeki dosyaların başına otomatik olarak 1-, 2-, 3- gibi numaralar eklenmez.
+⚠️ Legal Disclaimer
+This application is a technical tool.
+Users are responsible for how they use downloaded content. You should respect YouTube's Terms of Service, copyright laws, and the rights of content creators.
+The application is intended to be used only with content that you have the legal right or permission to download.
 ---
-⚙️ Ayarlar
-Uygulamanın Ayarlar bölümünden:
-İndirme konumu
-Varsayılan video kalitesi
-Varsayılan MP3 kalitesi
-gibi seçenekler değiştirilebilir.
+📦 Project Structure
+```text
+Fafatara-Downloader/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+├── assets/
+│   └── ...
+└── ...
+```
+The project structure may change between releases.
 ---
-📜 Lisans
-Bu proje MIT lisansı altında yayımlanmaktadır.
-Detaylar için LICENSE dosyasına bakabilirsiniz.
+🤝 Contributing
+If you would like to help improve the project, report bugs, or suggest new features, you can:
+Open an Issue,
+Submit a Pull Request,
+Share your ideas and suggestions.
+Contributions are welcome! ❤️
 ---
-⚠️ Sorumluluk
-Fafatara Downloader, kullanıcıların internet üzerindeki içeriklere daha kolay erişebilmesi amacıyla geliştirilmiş bir yazılımdır.
-İndirdiğiniz içeriklerin telif haklarına, kullanım koşullarına ve ilgili platformların kurallarına uymak kullanıcının sorumluluğundadır.
-Yalnızca indirme ve kullanma hakkınız bulunan içerikleri indirmeniz önerilir.
+⭐ Support the Project
+If you find Fafatara Downloader useful, consider giving the repository a ⭐ on GitHub.
+Thank you for supporting the project!
 ---
-🦋 Fafatara Downloader
-Reklamlarla, yanıltıcı indirme butonlarıyla ve gereksiz yazılımlarla dolu indirme sitelerine alternatif olarak; sade, kullanışlı ve kullanıcı deneyimine odaklanan bir masaüstü uygulaması olarak geliştirilmiştir.
-Amaç, kullanıcıya mümkün olduğunca temiz ve anlaşılır bir indirme deneyimi sunmaktır.
----
-❤️ Geliştirici
-Made with ❤️ by Feyyaz
-🦋 Fafatara Downloader
+Fafatara Downloader — Simple, fast and easy audio downloading. 🎵
