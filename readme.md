@@ -98,3 +98,4 @@ Use the application only for content you have the right or permission to downloa
 ---
 
 🦋 **Fafatara Downloader** · Made with ❤️ by Feyyaz
+ 
