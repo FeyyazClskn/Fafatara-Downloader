@@ -1,22 +1,17 @@
-<div align="center">
-<img src="./assets/logo.png" alt="Fafatara Downloader" width="140">
-Fafatara Downloader
+🦋 Fafatara Downloader
 Simple, fast and modern YouTube downloader for Windows.
-![Windows](https://img.shields.io/badge/Windows-11%2F10-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-8A2BE2?style=flat-square)
-</div>
 ---
 🌐 Dil / Language
 🇹🇷 Türkçe
 🇬🇧 English
 ---
-Türkçe
+🇹🇷 Türkçe
 Fafatara Downloader, YouTube bağlantılarından müzik, ses ve video içeriklerini kolayca indirmenizi sağlayan modern bir Windows masaüstü uygulamasıdır.
 🖥️ Uygulama Görüntüsü
-<div align="center">
-<img src="./assets/app-screenshot.png" alt="Fafatara Downloader uygulama ekranı" width="900">
-</div>
+![Fafatara Downloader](./assets/app-screenshot.png)
 ✨ Özellikler
 🎵 YouTube videolarından MP3 / ses indirme
 🎬 MP4 / video indirme
@@ -73,12 +68,10 @@ YouTube'un kullanım koşullarına, telif haklarına ve içerik sahiplerinin hak
 Hata bildirmek veya projeye katkıda bulunmak için GitHub üzerinden Issue veya Pull Request oluşturabilirsiniz.
 🇬🇧 English bölümüne geç
 ---
-English
+🇬🇧 English
 Fafatara Downloader is a modern Windows desktop application that makes it easy to download music, audio and video content from YouTube URLs.
 🖥️ Application Screenshot
-<div align="center">
-<img src="./assets/app-screenshot.png" alt="Fafatara Downloader application screenshot" width="900">
-</div>
+![Fafatara Downloader](./assets/app-screenshot.png)
 ✨ Features
 🎵 MP3 / audio downloads from YouTube
 🎬 MP4 / video downloads
@@ -135,7 +128,9 @@ Please respect YouTube's Terms of Service, copyright laws and the rights of cont
 You can report bugs, suggest features or contribute to the project by opening an Issue or Pull Request on GitHub.
 🇹🇷 Türkçe bölümüne geç
 ---
-<div align="center">
+⭐ Support
+If you find Fafatara Downloader useful, consider giving the repository a ⭐.
+⭐ Visit Fafatara Downloader
+---
 🦋 Fafatara Downloader
 Made with ❤️ by Feyyaz
-</div>
