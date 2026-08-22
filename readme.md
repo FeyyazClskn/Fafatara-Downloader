@@ -3,8 +3,7 @@ Fafatara Downloader, YouTube üzerinden müzik ve ses içeriklerini kolayca indi
 🌐 Language / Dil
 🇹🇷 Türkçe • 🇬🇧 English
 ---
-<a id="turkce"></a>
-🇹🇷 Türkçe
+Türkçe
 🇬🇧 English'e geç
 📌 Proje Hakkında
 Fafatara Downloader, YouTube'daki müzik ve ses içeriklerini kolayca indirmenizi amaçlayan bir masaüstü uygulamasıdır.
@@ -87,7 +86,8 @@ Geliştirme önerilerinizi paylaşabilirsiniz.
 Katkılarınızı bekliyoruz! ❤️
 ---
 <a id="english"></a>
-🇬🇧 English
+---
+English
 🇹🇷 Türkçe'ye geç
 📌 About the Project
 Fafatara Downloader is a simple desktop application designed to make downloading music and audio content from YouTube easier.
