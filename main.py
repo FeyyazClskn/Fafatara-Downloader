@@ -59,11 +59,101 @@ SETTINGS_PATH = os.path.join(
 # SETTINGS
 # =========================================================
 
+
+# =========================================================
+# LANGUAGE / TRANSLATIONS
+# =========================================================
+
+LANGUAGES = {
+    "en": "English",
+    "tr": "Türkçe",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "pt": "Português",
+    "ru": "Русский",
+    "zh": "简体中文",
+}
+
+TRANSLATIONS = {
+    "tr": {
+        "Hoş Geldin 👋": "Hoş Geldin 👋",
+        "Videolarını, müziklerini ve playlistlerini kolayca indir.": "Videolarını, müziklerini ve playlistlerini kolayca indir.",
+        "İndirmeler": "İndirmeler", "Daha önce indirdiğin dosyalar.": "Daha önce indirdiğin dosyalar.",
+        "Playlist": "Playlist", "Playlistler": "Playlistler", "Daha önce indirdiğin playlistler.": "Daha önce indirdiğin playlistler.",
+        "Ayarlar": "Ayarlar", "Fafatara Downloader ayarlarını buradan yönet.": "Fafatara Downloader ayarlarını buradan yönet.",
+        "Hakkında": "Hakkında", "FORMAT": "FORMAT", "KALİTE": "KALİTE", "İNDİRME KONUMU": "İNDİRME KONUMU",
+        "Tümünü Seç": "Tümünü Seç", "🔗  YouTube bağlantısını buraya yapıştır...": "🔗  YouTube bağlantısını buraya yapıştır...",
+        "⌕  ANALİZ ET": "⌕  ANALİZ ET", "🦋   İNDİRMEYİ BAŞLAT": "🦋   İNDİRMEYİ BAŞLAT",
+        "Hazır": "Hazır", "Henüz indirme başlatılmadı.": "Henüz indirme başlatılmadı.",
+        "İndirme Konumu": "İndirme Konumu", "İndirilen dosyaların kaydedileceği ana klasör.": "İndirilen dosyaların kaydedileceği ana klasör.",
+        "📁 Klasör Seç": "📁 Klasör Seç", "Varsayılan Format": "Varsayılan Format",
+        "Uygulama açıldığında seçili olacak format.": "Uygulama açıldığında seçili olacak format.",
+        "Varsayılan Video Kalitesi": "Varsayılan Video Kalitesi", "MP4 indirirken kullanılacak varsayılan kalite.": "MP4 indirirken kullanılacak varsayılan kalite.",
+        "Varsayılan MP3 Kalitesi": "Varsayılan MP3 Kalitesi", "MP3 indirirken kullanılacak ses kalitesi.": "MP3 indirirken kullanılacak ses kalitesi.",
+        "✓  AYARLARI KAYDET": "✓  AYARLARI KAYDET", "↻  Yenile": "↻  Yenile",
+        "Sürüm 1.0.0": "Sürüm 1.0.0", "Dil": "Dil", "Uygulama dili": "Uygulama dili",
+        "Ayarlar başarıyla kaydedildi.": "Ayarlar başarıyla kaydedildi.", "Önce YouTube bağlantısını gir.": "Önce YouTube bağlantısını gir.",
+        "Bağlantı analiz ediliyor...": "Bağlantı analiz ediliyor...", "Video hazır.": "Video hazır.",
+        "Analiz başarısız.": "Analiz başarısız.", "YouTube bağlantısı gir.": "YouTube bağlantısı gir.",
+        "İndirme başlıyor...": "İndirme başlıyor...", "İndiriliyor  •  ": "İndiriliyor  •  ",
+        "Dosya işleniyor...": "Dosya işleniyor...", "✓  İndirme tamamlandı": "✓  İndirme tamamlandı",
+        "İndirme başarıyla tamamlandı.": "İndirme başarıyla tamamlandı.", "✕  İndirme başarısız": "✕  İndirme başarısız",
+        "İndirme Hatası": "İndirme Hatası", "İndirme klasörü seç": "İndirme klasörü seç",
+        "Henüz indirilen dosya yok.": "Henüz indirilen dosya yok.", "Henüz playlist indirilmedi.": "Henüz playlist indirilmedi.",
+        "about_text": "Fafatara Downloader, internet üzerindeki video ve müzik indirme deneyimini daha sade, temiz ve kullanışlı hale getirmek amacıyla geliştirilmiştir.\n\nİnternette kullanıcıları gereksiz reklamlar, açılır pencereler ve şüpheli indirme butonlarıyla karşı karşıya bırakan birçok indirme sitesi bulunmaktadır.\n\nFafatara Downloader bu karmaşık deneyime karşı sade bir masaüstü alternatif sunmayı amaçlar.\n\nUygulama MP4, MP3, yüksek kaliteli video, ses kalitesi ve playlist indirme özelliklerini tek bir arayüzde bir araya getirir.\n\nFafatara Downloader bağımsız olarak geliştirilmektedir.",
+        "footer": "🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz",
+        "video hazır.": "video hazır.",
+        "Bilinmeyen video": "Bilinmeyen video",
+    },
+    "en": {
+        "Hoş Geldin 👋": "Welcome 👋", "Videolarını, müziklerini ve playlistlerini kolayca indir.": "Download your videos, music and playlists with ease.",
+        "İndirmeler": "Downloads", "Daha önce indirdiğin dosyalar.": "Your previously downloaded files.",
+        "Playlist": "Playlist", "Playlistler": "Playlists", "Daha önce indirdiğin playlistler.": "Your previously downloaded playlists.",
+        "Ayarlar": "Settings", "Fafatara Downloader ayarlarını buradan yönet.": "Manage Fafatara Downloader settings here.",
+        "Hakkında": "About", "FORMAT": "FORMAT", "KALİTE": "QUALITY", "İNDİRME KONUMU": "DOWNLOAD LOCATION",
+        "Tümünü Seç": "Select All", "🔗  YouTube bağlantısını buraya yapıştır...": "🔗  Paste YouTube link here...",
+        "⌕  ANALİZ ET": "⌕  ANALYZE", "🦋   İNDİRMEYİ BAŞLAT": "🦋   START DOWNLOAD",
+        "Hazır": "Ready", "Henüz indirme başlatılmadı.": "No download started yet.",
+        "İndirme Konumu": "Download Location", "İndirilen dosyaların kaydedileceği ana klasör.": "Main folder where downloaded files are saved.",
+        "📁 Klasör Seç": "📁 Choose Folder", "Varsayılan Format": "Default Format",
+        "Uygulama açıldığında seçili olacak format.": "The format selected when the application starts.",
+        "Varsayılan Video Kalitesi": "Default Video Quality", "MP4 indirirken kullanılacak varsayılan kalite.": "Default quality for MP4 downloads.",
+        "Varsayılan MP3 Kalitesi": "Default MP3 Quality", "MP3 indirirken kullanılacak ses kalitesi.": "Audio quality for MP3 downloads.",
+        "✓  AYARLARI KAYDET": "✓  SAVE SETTINGS", "↻  Yenile": "↻  Refresh",
+        "Sürüm 1.0.0": "Version 1.0.0", "Dil": "Language", "Uygulama dili": "Application language",
+        "Ayarlar başarıyla kaydedildi.": "Settings saved successfully.", "Önce YouTube bağlantısını gir.": "Enter a YouTube link first.",
+        "Bağlantı analiz ediliyor...": "Analyzing link...", "Video hazır.": "Video ready.",
+        "Analiz başarısız.": "Analysis failed.", "YouTube bağlantısı gir.": "Enter a YouTube link.",
+        "İndirme başlıyor...": "Starting download...", "İndiriliyor  •  ": "Downloading  •  ",
+        "Dosya işleniyor...": "Processing file...", "✓  İndirme tamamlandı": "✓  Download completed",
+        "İndirme başarıyla tamamlandı.": "Download completed successfully.", "✕  İndirme başarısız": "✕  Download failed",
+        "İndirme Hatası": "Download Error", "İndirme klasörü seç": "Choose download folder",
+        "Henüz indirilen dosya yok.": "No downloaded files yet.", "Henüz playlist indirilmedi.": "No playlists downloaded yet.",
+        "about_text": "Fafatara Downloader was developed to make downloading videos and music from the internet simpler, cleaner and easier to use.\n\nMany download sites expose users to unnecessary ads, pop-ups and suspicious download buttons.\n\nFafatara Downloader aims to provide a simple desktop alternative to this complicated experience.\n\nThe application brings MP4, MP3, high-quality video, audio quality and playlist downloads together in one interface.\n\nFafatara Downloader is developed independently.",
+        "footer": "🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz",
+    },
+}
+
+# Additional languages. Unlisted strings fall back to English so every
+# control remains usable even if a future text is added.
+TRANSLATIONS.update({
+    "de": {"Hoş Geldin 👋":"Willkommen 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Lade Videos, Musik und Playlists einfach herunter.","İndirmeler":"Downloads","Daha önce indirdiğin dosyalar.":"Zuvor heruntergeladene Dateien.","Playlist":"Playlist","Playlistler":"Playlists","Daha önce indirdiğin playlistler.":"Zuvor heruntergeladene Playlists.","Ayarlar":"Einstellungen","Fafatara Downloader ayarlarını buradan yönet.":"Verwalte hier die Einstellungen von Fafatara Downloader.","Hakkında":"Über","KALİTE":"QUALITÄT","İNDİRME KONUMU":"DOWNLOAD-ORDNER","Tümünü Seç":"Alle auswählen","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  YouTube-Link hier einfügen...","⌕  ANALİZ ET":"⌕  ANALYSIEREN","🦋   İNDİRMEYİ BAŞLAT":"🦋   DOWNLOAD STARTEN","Hazır":"Bereit","Henüz indirme başlatılmadı.":"Noch kein Download gestartet.","İndirme Konumu":"Download-Ordner","İndirilen dosyaların kaydedileceği ana klasör.":"Hauptordner für heruntergeladene Dateien.","📁 Klasör Seç":"📁 Ordner auswählen","Varsayılan Format":"Standardformat","Uygulama açıldığında seçili olacak format.":"Format beim Start.","Varsayılan Video Kalitesi":"Standard-Videoqualität","Varsayılan MP3 Kalitesi":"Standard-MP3-Qualität","✓  AYARLARI KAYDET":"✓  EINSTELLUNGEN SPEICHERN","↻  Yenile":"↻  Aktualisieren","Dil":"Sprache","Uygulama dili":"Anwendungssprache","Ayarlar başarıyla kaydedildi.":"Einstellungen gespeichert.","Önce YouTube bağlantısını gir.":"Gib zuerst einen YouTube-Link ein.","Bağlantı analiz ediliyor...":"Link wird analysiert...","Video hazır.":"Video bereit.","Analiz başarısız.":"Analyse fehlgeschlagen.","YouTube bağlantısı gir.":"Gib einen YouTube-Link ein.","İndirme başlıyor...":"Download wird gestartet...","İndiriliyor  •  ":"Wird heruntergeladen  •  ","Dosya işleniyor...":"Datei wird verarbeitet...","✓  İndirme tamamlandı":"✓  Download abgeschlossen","İndirme başarıyla tamamlandı.":"Download erfolgreich abgeschlossen.","✕  İndirme başarısız":"✕  Download fehlgeschlagen","İndirme Hatası":"Download-Fehler","İndirme klasörü seç":"Download-Ordner auswählen","Henüz indirilen dosya yok.":"Noch keine Dateien heruntergeladen.","Henüz playlist indirilmedi.":"Noch keine Playlists heruntergeladen.","about_text":"Fafatara Downloader wurde entwickelt, um das Herunterladen von Videos und Musik aus dem Internet einfacher und übersichtlicher zu machen.\n\nDie Anwendung bietet eine einfache Desktop-Alternative zu komplizierten Download-Seiten.\n\nMP4, MP3, hochwertige Video-, Audio- und Playlist-Downloads werden in einer Oberfläche vereint.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "es": {"Hoş Geldin 👋":"Bienvenido 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Descarga vídeos, música y listas de reproducción fácilmente.","İndirmeler":"Descargas","Daha önce indirdiğin dosyalar.":"Tus archivos descargados.","Playlist":"Lista","Playlistler":"Listas","Daha önce indirdiğin playlistler.":"Tus listas descargadas.","Ayarlar":"Ajustes","Fafatara Downloader ayarlarını buradan yönet.":"Gestiona aquí los ajustes de Fafatara Downloader.","Hakkında":"Acerca de","KALİTE":"CALIDAD","İNDİRME KONUMU":"UBICACIÓN DE DESCARGA","Tümünü Seç":"Seleccionar todo","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  Pega el enlace de YouTube aquí...","⌕  ANALİZ ET":"⌕  ANALIZAR","🦋   İNDİRMEYİ BAŞLAT":"🦋   INICIAR DESCARGA","Hazır":"Listo","Henüz indirme başlatılmadı.":"No se ha iniciado ninguna descarga.","İndirme Konumu":"Ubicación de descarga","📁 Klasör Seç":"📁 Elegir carpeta","Varsayılan Format":"Formato predeterminado","Varsayılan Video Kalitesi":"Calidad de vídeo predeterminada","Varsayılan MP3 Kalitesi":"Calidad MP3 predeterminada","✓  AYARLARI KAYDET":"✓  GUARDAR AJUSTES","↻  Yenile":"↻  Actualizar","Dil":"Idioma","Uygulama dili":"Idioma de la aplicación","Ayarlar başarıyla kaydedildi.":"Ajustes guardados correctamente.","Önce YouTube bağlantısını gir.":"Introduce primero un enlace de YouTube.","Bağlantı analiz ediliyor...":"Analizando enlace...","Video hazır.":"Vídeo listo.","Analiz başarısız.":"Error de análisis.","YouTube bağlantısı gir.":"Introduce un enlace de YouTube.","İndirme başlıyor...":"Iniciando descarga...","İndiriliyor  •  ":"Descargando  •  ","Dosya işleniyor...":"Procesando archivo...","✓  İndirme tamamlandı":"✓  Descarga completada","İndirme başarıyla tamamlandı.":"Descarga completada correctamente.","✕  İndirme başarısız":"✕  Descarga fallida","İndirme Hatası":"Error de descarga","İndirme klasörü seç":"Elegir carpeta de descarga","Henüz indirilen dosya yok.":"Aún no hay archivos descargados.","Henüz playlist indirilmedi.":"Aún no hay listas descargadas.","about_text":"Fafatara Downloader fue desarrollado para hacer más sencilla y cómoda la descarga de vídeos y música de Internet.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "fr": {"Hoş Geldin 👋":"Bienvenue 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Téléchargez facilement vos vidéos, musiques et playlists.","İndirmeler":"Téléchargements","Daha önce indirdiğin dosyalar.":"Vos fichiers téléchargés.","Playlist":"Playlist","Playlistler":"Playlists","Daha önce indirdiğin playlistler.":"Vos playlists téléchargées.","Ayarlar":"Paramètres","Fafatara Downloader ayarlarını buradan yönet.":"Gérez les paramètres de Fafatara Downloader ici.","Hakkında":"À propos","KALİTE":"QUALITÉ","İNDİRME KONUMU":"EMPLACEMENT DE TÉLÉCHARGEMENT","Tümünü Seç":"Tout sélectionner","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  Collez le lien YouTube ici...","⌕  ANALİZ ET":"⌕  ANALYSER","🦋   İNDİRMEYİ BAŞLAT":"🦋   DÉMARRER LE TÉLÉCHARGEMENT","Hazır":"Prêt","Henüz indirme başlatılmadı.":"Aucun téléchargement démarré.","İndirme Konumu":"Emplacement de téléchargement","📁 Klasör Seç":"📁 Choisir un dossier","Varsayılan Format":"Format par défaut","Varsayılan Video Kalitesi":"Qualité vidéo par défaut","Varsayılan MP3 Kalitesi":"Qualité MP3 par défaut","✓  AYARLARI KAYDET":"✓  ENREGISTRER","↻  Yenile":"↻  Actualiser","Dil":"Langue","Uygulama dili":"Langue de l’application","Ayarlar başarıyla kaydedildi.":"Paramètres enregistrés.","Önce YouTube bağlantısını gir.":"Entrez d’abord un lien YouTube.","Bağlantı analiz ediliyor...":"Analyse du lien...","Video hazır.":"Vidéo prête.","Analiz başarısız.":"Échec de l’analyse.","YouTube bağlantısı gir.":"Entrez un lien YouTube.","İndirme başlıyor...":"Démarrage du téléchargement...","İndiriliyor  •  ":"Téléchargement  •  ","Dosya işleniyor...":"Traitement du fichier...","✓  İndirme tamamlandı":"✓  Téléchargement terminé","İndirme başarıyla tamamlandı.":"Téléchargement terminé avec succès.","✕  İndirme başarısız":"✕  Échec du téléchargement","İndirme Hatası":"Erreur de téléchargement","İndirme klasörü seç":"Choisir le dossier de téléchargement","Henüz indirilen dosya yok.":"Aucun fichier téléchargé.","Henüz playlist indirilmedi.":"Aucune playlist téléchargée.","about_text":"Fafatara Downloader a été conçu pour rendre le téléchargement de vidéos et de musique depuis Internet plus simple et pratique.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "it": {"Hoş Geldin 👋":"Benvenuto 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Scarica facilmente video, musica e playlist.","İndirmeler":"Download","Daha önce indirdiğin dosyalar.":"I tuoi file scaricati.","Playlist":"Playlist","Playlistler":"Playlist","Daha önce indirdiğin playlistler.":"Le tue playlist scaricate.","Ayarlar":"Impostazioni","Fafatara Downloader ayarlarını buradan yönet.":"Gestisci qui le impostazioni di Fafatara Downloader.","Hakkında":"Informazioni","KALİTE":"QUALITÀ","İNDİRME KONUMU":"POSIZIONE DOWNLOAD","Tümünü Seç":"Seleziona tutto","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  Incolla qui il link di YouTube...","⌕  ANALİZ ET":"⌕  ANALIZZA","🦋   İNDİRMEYİ BAŞLAT":"🦋   AVVIA DOWNLOAD","Hazır":"Pronto","Henüz indirme başlatılmadı.":"Nessun download avviato.","İndirme Konumu":"Posizione download","📁 Klasör Seç":"📁 Scegli cartella","Varsayılan Format":"Formato predefinito","Varsayılan Video Kalitesi":"Qualità video predefinita","Varsayılan MP3 Kalitesi":"Qualità MP3 predefinita","✓  AYARLARI KAYDET":"✓  SALVA IMPOSTAZIONI","↻  Yenile":"↻  Aggiorna","Dil":"Lingua","Uygulama dili":"Lingua dell’applicazione","Ayarlar başarıyla kaydedildi.":"Impostazioni salvate.","Önce YouTube bağlantısını gir.":"Inserisci prima un link YouTube.","Bağlantı analiz ediliyor...":"Analisi del link...","Video hazır.":"Video pronto.","Analiz başarısız.":"Analisi non riuscita.","YouTube bağlantısı gir.":"Inserisci un link YouTube.","İndirme başlıyor...":"Avvio download...","İndiriliyor  •  ":"Download  •  ","Dosya işleniyor...":"Elaborazione file...","✓  İndirme tamamlandı":"✓  Download completato","İndirme başarıyla tamamlandı.":"Download completato.","✕  İndirme başarısız":"✕  Download non riuscito","İndirme Hatası":"Errore di download","İndirme klasörü seç":"Scegli cartella download","Henüz indirilen dosya yok.":"Nessun file scaricato.","Henüz playlist indirilmedi.":"Nessuna playlist scaricata.","about_text":"Fafatara Downloader è stato sviluppato per rendere più semplice e pratico il download di video e musica da Internet.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "pt": {"Hoş Geldin 👋":"Bem-vindo 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Baixe vídeos, músicas e playlists facilmente.","İndirmeler":"Downloads","Daha önce indirdiğin dosyalar.":"Seus arquivos baixados.","Playlist":"Playlist","Playlistler":"Playlists","Daha önce indirdiğin playlistler.":"Suas playlists baixadas.","Ayarlar":"Configurações","Fafatara Downloader ayarlarını buradan yönet.":"Gerencie as configurações do Fafatara Downloader aqui.","Hakkında":"Sobre","KALİTE":"QUALIDADE","İNDİRME KONUMU":"LOCAL DE DOWNLOAD","Tümünü Seç":"Selecionar tudo","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  Cole o link do YouTube aqui...","⌕  ANALİZ ET":"⌕  ANALISAR","🦋   İNDİRMEYİ BAŞLAT":"🦋   INICIAR DOWNLOAD","Hazır":"Pronto","Henüz indirme başlatılmadı.":"Nenhum download iniciado.","İndirme Konumu":"Local de download","📁 Klasör Seç":"📁 Escolher pasta","Varsayılan Format":"Formato padrão","Varsayılan Video Kalitesi":"Qualidade de vídeo padrão","Varsayılan MP3 Kalitesi":"Qualidade MP3 padrão","✓  AYARLARI KAYDET":"✓  SALVAR CONFIGURAÇÕES","↻  Yenile":"↻  Atualizar","Dil":"Idioma","Uygulama dili":"Idioma do aplicativo","Ayarlar başarıyla kaydedildi.":"Configurações salvas.","Önce YouTube bağlantısını gir.":"Insira primeiro um link do YouTube.","Bağlantı analiz ediliyor...":"Analisando link...","Video hazır.":"Vídeo pronto.","Analiz başarısız.":"Falha na análise.","YouTube bağlantısı gir.":"Insira um link do YouTube.","İndirme başlıyor...":"Iniciando download...","İndiriliyor  •  ":"Baixando  •  ","Dosya işleniyor...":"Processando arquivo...","✓  İndirme tamamlandı":"✓  Download concluído","İndirme başarıyla tamamlandı.":"Download concluído com sucesso.","✕  İndirme başarısız":"✕  Falha no download","İndirme Hatası":"Erro de download","İndirme klasörü seç":"Escolher pasta de download","Henüz indirilen dosya yok.":"Nenhum arquivo baixado.","Henüz playlist indirilmedi.":"Nenhuma playlist baixada.","about_text":"O Fafatara Downloader foi desenvolvido para tornar o download de vídeos e músicas da Internet mais simples e prático.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "ru": {"Hoş Geldin 👋":"Добро пожаловать 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"Легко скачивайте видео, музыку и плейлисты.","İndirmeler":"Загрузки","Daha önce indirdiğin dosyalar.":"Ранее загруженные файлы.","Playlist":"Плейлист","Playlistler":"Плейлисты","Daha önce indirdiğin playlistler.":"Ранее загруженные плейлисты.","Ayarlar":"Настройки","Fafatara Downloader ayarlarını buradan yönet.":"Управляйте настройками Fafatara Downloader здесь.","Hakkında":"О программе","KALİTE":"КАЧЕСТВО","İNDİRME KONUMU":"ПАПКА ЗАГРУЗКИ","Tümünü Seç":"Выбрать все","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  Вставьте ссылку YouTube сюда...","⌕  ANALİZ ET":"⌕  АНАЛИЗИРОВАТЬ","🦋   İNDİRMEYİ BAŞLAT":"🦋   НАЧАТЬ ЗАГРУЗКУ","Hazır":"Готово","Henüz indirme başlatılmadı.":"Загрузка ещё не начата.","İndirme Konumu":"Папка загрузки","📁 Klasör Seç":"📁 Выбрать папку","Varsayılan Format":"Формат по умолчанию","Varsayılan Video Kalitesi":"Качество видео по умолчанию","Varsayılan MP3 Kalitesi":"Качество MP3 по умолчанию","✓  AYARLARI KAYDET":"✓  СОХРАНИТЬ НАСТРОЙКИ","↻  Yenile":"↻  Обновить","Dil":"Язык","Uygulama dili":"Язык приложения","Ayarlar başarıyla kaydedildi.":"Настройки сохранены.","Önce YouTube bağlantısını gir.":"Сначала введите ссылку YouTube.","Bağlantı analiz ediliyor...":"Анализ ссылки...","Video hazır.":"Видео готово.","Analiz başarısız.":"Ошибка анализа.","YouTube bağlantısı gir.":"Введите ссылку YouTube.","İndirme başlıyor...":"Начало загрузки...","İndiriliyor  •  ":"Загрузка  •  ","Dosya işleniyor...":"Обработка файла...","✓  İndirme tamamlandı":"✓  Загрузка завершена","İndirme başarıyla tamamlandı.":"Загрузка успешно завершена.","✕  İndirme başarısız":"✕  Загрузка не удалась","İndirme Hatası":"Ошибка загрузки","İndirme klasörü seç":"Выбрать папку загрузки","Henüz indirilen dosya yok.":"Загруженных файлов пока нет.","Henüz playlist indirilmedi.":"Плейлисты пока не загружены.","about_text":"Fafatara Downloader создан для того, чтобы сделать загрузку видео и музыки из Интернета проще и удобнее.","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+    "zh": {"Hoş Geldin 👋":"欢迎 👋","Videolarını, müziklerini ve playlistlerini kolayca indir.":"轻松下载视频、音乐和播放列表。","İndirmeler":"下载","Daha önce indirdiğin dosyalar.":"之前下载的文件。","Playlist":"播放列表","Playlistler":"播放列表","Daha önce indirdiğin playlistler.":"之前下载的播放列表。","Ayarlar":"设置","Fafatara Downloader ayarlarını buradan yönet.":"在这里管理 Fafatara Downloader 设置。","Hakkında":"关于","KALİTE":"质量","İNDİRME KONUMU":"下载位置","Tümünü Seç":"全选","🔗  YouTube bağlantısını buraya yapıştır...":"🔗  在此粘贴 YouTube 链接...","⌕  ANALİZ ET":"⌕  分析","🦋   İNDİRMEYİ BAŞLAT":"🦋   开始下载","Hazır":"就绪","Henüz indirme başlatılmadı.":"尚未开始下载。","İndirme Konumu":"下载位置","📁 Klasör Seç":"📁 选择文件夹","Varsayılan Format":"默认格式","Varsayılan Video Kalitesi":"默认视频质量","Varsayılan MP3 Kalitesi":"默认 MP3 质量","✓  AYARLARI KAYDET":"✓  保存设置","↻  Yenile":"↻  刷新","Dil":"语言","Uygulama dili":"应用语言","Ayarlar başarıyla kaydedildi.":"设置已保存。","Önce YouTube bağlantısını gir.":"请先输入 YouTube 链接。","Bağlantı analiz ediliyor...":"正在分析链接...","Video hazır.":"视频已准备好。","Analiz başarısız.":"分析失败。","YouTube bağlantısı gir.":"请输入 YouTube 链接。","İndirme başlıyor...":"开始下载...","İndiriliyor  •  ":"正在下载  •  ","Dosya işleniyor...":"正在处理文件...","✓  İndirme tamamlandı":"✓  下载完成","İndirme başarıyla tamamlandı.":"下载成功完成。","✕  İndirme başarısız":"✕  下载失败","İndirme Hatası":"下载错误","İndirme klasörü seç":"选择下载文件夹","Henüz indirilen dosya yok.":"暂无下载文件。","Henüz playlist indirilmedi.":"暂无下载的播放列表。","about_text":"Fafatara Downloader 旨在让从互联网下载视频和音乐变得更加简单、清晰和方便。","footer":"🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"},
+})
+
 DEFAULT_SETTINGS = {
     "download_folder": "",
     "format": "MP4",
     "quality": "1080p",
-    "audio_quality": "320"
+    "audio_quality": "320",
+    "language": "en"
 }
 
 
@@ -289,9 +379,71 @@ class FafataraDownloader(
 
         self.build_ui()
 
+        self.register_translation_widgets()
+        self.retranslate_ui()
+
         self.apply_theme()
 
         self.show_home()
+
+    def t(self, key):
+        language = self.settings.get("language", "en")
+        if language not in TRANSLATIONS:
+            language = "en"
+        return TRANSLATIONS.get(language, {}).get(
+            key,
+            TRANSLATIONS["en"].get(key, key)
+        )
+
+    def register_translation_widgets(self):
+        self._translation_widgets = []
+        for widget in self.findChildren(QWidget):
+            if isinstance(widget, (QLabel, QPushButton, QCheckBox)):
+                value = widget.text()
+                if value in TRANSLATIONS["tr"] or value in TRANSLATIONS["en"]:
+                    widget.setProperty("_translation_key", value)
+                    self._translation_widgets.append(("text", widget))
+            if isinstance(widget, QLineEdit):
+                value = widget.placeholderText()
+                if value in TRANSLATIONS["tr"] or value in TRANSLATIONS["en"]:
+                    widget.setProperty("_translation_placeholder", value)
+                    self._translation_widgets.append(("placeholder", widget))
+
+    def retranslate_ui(self):
+        for kind, widget in getattr(self, "_translation_widgets", []):
+            if kind == "text":
+                key = widget.property("_translation_key")
+                widget.setText(self.t(key))
+            else:
+                key = widget.property("_translation_placeholder")
+                widget.setPlaceholderText(self.t(key))
+
+        if hasattr(self, "about_text"):
+            self.about_text.setText(self.t("about_text"))
+
+        if hasattr(self, "footer"):
+            self.footer.setText(self.t("footer"))
+
+        if hasattr(self, "settings_language"):
+            current = self.settings.get("language", "en")
+            self.settings_language.blockSignals(True)
+            self.settings_language.clear()
+            for code, name in LANGUAGES.items():
+                self.settings_language.addItem(name, code)
+            self.settings_language.setCurrentIndex(
+                max(0, self.settings_language.findData(current))
+            )
+            self.settings_language.blockSignals(False)
+
+    def change_language(self, index):
+        if not hasattr(self, "settings_language"):
+            return
+        code = self.settings_language.itemData(index)
+        if code not in LANGUAGES:
+            return
+        self.settings["language"] = code
+        save_settings(self.settings)
+        self.retranslate_ui()
 
     # =====================================================
     # BUILD
@@ -1090,20 +1242,20 @@ class FafataraDownloader(
 
         # FOOTER
 
-        footer = QLabel(
-            "🦋 Fafatara Downloader  •  Made with ❤️ by Feyyaz"
+        self.footer = QLabel(
+            self.t("footer")
         )
 
-        footer.setObjectName(
+        self.footer.setObjectName(
             "footer"
         )
 
-        footer.setAlignment(
+        self.footer.setAlignment(
             Qt.AlignCenter
         )
 
         layout.addWidget(
-            footer
+            self.footer
         )
 
         page.setLayout(
@@ -1405,6 +1557,34 @@ class FafataraDownloader(
         layout.addWidget(
             subtitle
         )
+
+        # -------------------------------------------------
+        # LANGUAGE
+        # -------------------------------------------------
+
+        language_card = QFrame()
+        language_card.setObjectName("card")
+        language_layout = QVBoxLayout()
+
+        language_title = QLabel("Dil")
+        language_title.setObjectName("settingTitle")
+
+        language_desc = QLabel("Uygulama dili")
+        language_desc.setObjectName("settingDescription")
+
+        self.settings_language = QComboBox()
+        for code, name in LANGUAGES.items():
+            self.settings_language.addItem(name, code)
+        self.settings_language.setCurrentIndex(
+            max(0, self.settings_language.findData(self.settings.get("language", "en")))
+        )
+        self.settings_language.currentIndexChanged.connect(self.change_language)
+
+        language_layout.addWidget(language_title)
+        language_layout.addWidget(language_desc)
+        language_layout.addWidget(self.settings_language)
+        language_card.setLayout(language_layout)
+        layout.addWidget(language_card)
 
         # -------------------------------------------------
         # DOWNLOAD FOLDER
@@ -1829,43 +2009,22 @@ class FafataraDownloader(
             version
         )
 
-        text = QLabel(
-            "Fafatara Downloader, internet üzerindeki "
-            "video ve müzik indirme deneyimini daha sade, "
-            "temiz ve kullanışlı hale getirmek amacıyla "
-            "geliştirilmiştir."
-            "\n\n"
-            "İnternette kullanıcıları gereksiz reklamlar, "
-            "açılır pencereler ve şüpheli indirme butonlarıyla "
-            "karşı karşıya bırakan birçok indirme sitesi "
-            "bulunmaktadır."
-            "\n\n"
-            "Fafatara Downloader bu karmaşık deneyime "
-            "karşı sade bir masaüstü alternatif sunmayı "
-            "amaçlar."
-            "\n\n"
-            "Uygulama MP4, MP3, yüksek kaliteli video, "
-            "ses kalitesi ve playlist indirme özelliklerini "
-            "tek bir arayüzde bir araya getirir."
-            "\n\n"
-            "Fafatara Downloader bağımsız olarak "
-            "geliştirilmektedir."
-        )
+        self.about_text = QLabel(self.t("about_text"))
 
-        text.setObjectName(
+        self.about_text.setObjectName(
             "aboutText"
         )
 
-        text.setWordWrap(
+        self.about_text.setWordWrap(
             True
         )
 
-        text.setAlignment(
+        self.about_text.setAlignment(
             Qt.AlignCenter
         )
 
         card_layout.addWidget(
-            text
+            self.about_text
         )
 
         card_layout.addStretch()
@@ -1991,7 +2150,7 @@ class FafataraDownloader(
 
         folder = QFileDialog.getExistingDirectory(
             self,
-            "İndirme klasörü seç",
+            self.t("İndirme klasörü seç"),
             self.folder_input.text()
         )
 
@@ -2029,7 +2188,7 @@ class FafataraDownloader(
 
         folder = QFileDialog.getExistingDirectory(
             self,
-            "İndirme klasörü seç",
+            self.t("İndirme klasörü seç"),
             self.settings_folder.text()
         )
 
@@ -2060,6 +2219,8 @@ class FafataraDownloader(
         self.settings[
             "download_folder"
         ] = self.settings_folder.text()
+
+        self.settings["language"] = self.settings_language.currentData()
 
         self.settings[
             "format"
@@ -2130,7 +2291,7 @@ class FafataraDownloader(
         QMessageBox.information(
             self,
             APP_NAME,
-            "Ayarlar başarıyla kaydedildi."
+            self.t("Ayarlar başarıyla kaydedildi.")
         )
 
     # =====================================================
@@ -2148,7 +2309,7 @@ class FafataraDownloader(
             QMessageBox.warning(
                 self,
                 APP_NAME,
-                "Önce YouTube bağlantısını gir."
+                self.t("Önce YouTube bağlantısını gir.")
             )
 
             return
@@ -2158,7 +2319,7 @@ class FafataraDownloader(
         )
 
         self.status_label.setText(
-            "Bağlantı analiz ediliyor..."
+            self.t("Bağlantı analiz ediliyor...")
         )
 
         self.playlist_thread = PlaylistThread(
@@ -2194,7 +2355,7 @@ class FafataraDownloader(
             )
 
             self.status_label.setText(
-                "Video hazır."
+                self.t("Video hazır.")
             )
 
             return
@@ -2217,7 +2378,7 @@ class FafataraDownloader(
             item = QListWidgetItem(
                 entry.get(
                     "title",
-                    "Bilinmeyen video"
+                    self.t("Bilinmeyen video")
                 )
             )
 
@@ -2230,7 +2391,7 @@ class FafataraDownloader(
             )
 
         self.status_label.setText(
-            f"{info['count']} video hazır."
+            f"{info['count']} {self.t('video hazır.')}"
         )
 
     def playlist_error(
@@ -2243,7 +2404,7 @@ class FafataraDownloader(
         )
 
         self.status_label.setText(
-            "Analiz başarısız."
+            self.t("Analiz başarısız.")
         )
 
         QMessageBox.critical(
@@ -2292,7 +2453,7 @@ class FafataraDownloader(
             QMessageBox.warning(
                 self,
                 APP_NAME,
-                "YouTube bağlantısı gir."
+                self.t("YouTube bağlantısı gir.")
             )
 
             return
@@ -2379,7 +2540,7 @@ class FafataraDownloader(
         )
 
         self.status_label.setText(
-            "İndirme başlıyor..."
+            self.t("İndirme başlıyor...")
         )
 
         self.file_label.setText(
@@ -2474,7 +2635,7 @@ class FafataraDownloader(
             )
 
             self.status_label.setText(
-                f"İndiriliyor  •  "
+                f"{self.t('İndiriliyor  •  ')}"
                 f"{speed}  •  "
                 f"Kalan: {eta}"
             )
@@ -2505,7 +2666,7 @@ class FafataraDownloader(
             )
 
             self.status_label.setText(
-                "Dosya işleniyor..."
+                self.t("Dosya işleniyor...")
             )
 
     # =====================================================
@@ -2533,7 +2694,7 @@ class FafataraDownloader(
         )
 
         self.status_label.setText(
-            "✓  İndirme tamamlandı"
+            self.t("✓  İndirme tamamlandı")
         )
 
         self.refresh_downloads()
@@ -2543,7 +2704,7 @@ class FafataraDownloader(
         QMessageBox.information(
             self,
             APP_NAME,
-            "İndirme başarıyla tamamlandı."
+            self.t("İndirme başarıyla tamamlandı.")
         )
 
     # =====================================================
@@ -2564,12 +2725,12 @@ class FafataraDownloader(
         )
 
         self.status_label.setText(
-            "✕  İndirme başarısız"
+            self.t("✕  İndirme başarısız")
         )
 
         QMessageBox.critical(
             self,
-            "İndirme Hatası",
+            self.t("İndirme Hatası"),
             message
         )
 

@@ -1,6 +1,7 @@
 {
-    "download_folder": "C:/Users/thefe/Downloads/Fafatara Downloader\\Fafatara Downloader",
-    "format": "MP3",
+    "download_folder": "C:\\Users\\thefe\\Downloads\\Fafatara Downloader",
+    "format": "MP4",
     "quality": "1080p",
-    "audio_quality": "320"
+    "audio_quality": "320",
+    "language": "tr"
 }
