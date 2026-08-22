@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
 
@@ -45,7 +45,7 @@ jobs:
           python -m pip install pyinstaller
 
       # ==================================================
-      # WINDOWS ARAÇLARI KONTROL
+      # WINDOWS ARAÇLARI
       # ==================================================
 
       - name: Windows araçlarını kontrol et
@@ -78,7 +78,7 @@ jobs:
           }
 
       # ==================================================
-      # BGUTIL SERVER
+      # BGUTIL
       # ==================================================
 
       - name: bgutil server bağımlılıklarını kur
@@ -88,7 +88,7 @@ jobs:
           & "$env:GITHUB_WORKSPACE\tools\windows\deno.exe" install
 
       # ==================================================
-      # WINDOWS PYINSTALLER
+      # PYINSTALLER
       # ==================================================
 
       - name: Windows uygulamasını oluştur
@@ -111,7 +111,7 @@ jobs:
             main.py
 
       # ==================================================
-      # WINDOWS BUILD KONTROLÜ
+      # WINDOWS BUILD KONTROL
       # ==================================================
 
       - name: Windows build kontrolü
@@ -233,3 +233,73 @@ jobs:
           name: Fafatara-Downloader-Linux-x64
           path: Fafatara-Downloader-Linux-x64.tar.gz
           if-no-files-found: error
+
+
+  # ==================================================
+  # GITHUB RELEASE
+  # ==================================================
+
+  release:
+    name: GitHub Release
+    runs-on: ubuntu-latest
+
+    needs:
+      - windows
+      - linux
+
+    # Pull request'ta release oluşturma.
+    # Sadece main'e push edildiğinde release oluştur.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+
+      # ==================================================
+      # WINDOWS ARTIFACT
+      # ==================================================
+
+      - name: Windows paketini indir
+        uses: actions/download-artifact@v5
+        with:
+          name: Fafatara-Downloader-Windows-x64
+          path: release-assets
+
+      # ==================================================
+      # LINUX ARTIFACT
+      # ==================================================
+
+      - name: Linux paketini indir
+        uses: actions/download-artifact@v5
+        with:
+          name: Fafatara-Downloader-Linux-x64
+          path: release-assets
+
+      # ==================================================
+      # DOSYALARI KONTROL ET
+      # ==================================================
+
+      - name: Release dosyalarını kontrol et
+        shell: bash
+        run: |
+          echo "Release dosyaları:"
+          ls -lh release-assets
+
+          test -f release-assets/Fafatara-Downloader-Windows-x64.zip
+          test -f release-assets/Fafatara-Downloader-Linux-x64.tar.gz
+
+      # ==================================================
+      # RELEASE OLUŞTUR
+      # ==================================================
+
+      - name: GitHub Release oluştur
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          VERSION="v1.0.${{ github.run_number }}"
+
+          gh release create "$VERSION" \
+            release-assets/Fafatara-Downloader-Windows-x64.zip \
+            release-assets/Fafatara-Downloader-Linux-x64.tar.gz \
+            --repo "${{ github.repository }}" \
+            --title "Fafatara Downloader $VERSION" \
+            --generate-notes
