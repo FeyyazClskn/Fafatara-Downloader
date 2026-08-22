@@ -42,7 +42,11 @@ jobs:
           python -m pip install -r requirements.txt
           python -m pip install pyinstaller
 
-      - name: Gerekli Windows araçlarını kontrol et
+      # ==================================================
+      # BGUTIL SERVER HAZIRLA
+      # ==================================================
+
+      - name: Deno ve bgutil kontrolü
         shell: pwsh
         run: |
           if (-not (Test-Path "tools\windows\deno.exe")) {
@@ -54,6 +58,21 @@ jobs:
             Write-Error "tools\windows\ffmpeg.exe bulunamadı."
             exit 1
           }
+
+          if (-not (Test-Path "tools\bgutil\bgutil-ytdlp-pot-provider\server\src\main.ts")) {
+            Write-Error "bgutil server kaynakları bulunamadı."
+            exit 1
+          }
+
+      - name: bgutil server bağımlılıklarını kur
+        shell: pwsh
+        working-directory: tools/bgutil/bgutil-ytdlp-pot-provider/server
+        run: |
+          & "$env:GITHUB_WORKSPACE\tools\windows\deno.exe" install
+
+      # ==================================================
+      # WINDOWS PYINSTALLER
+      # ==================================================
 
       - name: Windows uygulamasını oluştur
         shell: cmd
@@ -68,30 +87,55 @@ jobs:
             --add-binary "tools\windows\deno.exe;tools\windows" ^
             --add-binary "tools\windows\ffmpeg.exe;tools\windows" ^
             --add-data "assets;assets" ^
+            --add-data "tools\bgutil;tools\bgutil" ^
             --collect-all yt_dlp ^
             --collect-all yt_dlp_ejs ^
             --collect-all yt_dlp_plugins ^
             main.py
 
+      # ==================================================
+      # WINDOWS BUILD KONTROLÜ
+      # ==================================================
+
       - name: Windows build kontrolü
         shell: pwsh
         run: |
-          $app = "dist\Fafatara Downloader\Fafatara Downloader.exe"
+          $root = "dist\Fafatara Downloader"
+          $app = "$root\Fafatara Downloader.exe"
 
           if (-not (Test-Path $app)) {
             Write-Error "Fafatara Downloader.exe oluşturulamadı."
             exit 1
           }
 
-          if (-not (Test-Path "dist\Fafatara Downloader\_internal\tools\deno.exe")) {
-            Write-Error "Paket içinde deno.exe bulunamadı."
+          if (-not (Test-Path "$root\_internal\tools\windows\deno.exe")) {
+            Write-Error "Paket içinde tools\windows\deno.exe bulunamadı."
             exit 1
           }
 
-          if (-not (Test-Path "dist\Fafatara Downloader\_internal\tools\ffmpeg.exe")) {
-            Write-Error "Paket içinde ffmpeg.exe bulunamadı."
+          if (-not (Test-Path "$root\_internal\tools\windows\ffmpeg.exe")) {
+            Write-Error "Paket içinde tools\windows\ffmpeg.exe bulunamadı."
             exit 1
           }
+
+          if (-not (Test-Path "$root\_internal\tools\bgutil\bgutil-ytdlp-pot-provider\server\src\main.ts")) {
+            Write-Error "Paket içinde bgutil server bulunamadı."
+            exit 1
+          }
+
+          Write-Host ""
+          Write-Host "========================================"
+          Write-Host " WINDOWS BUILD BAŞARILI"
+          Write-Host "========================================"
+          Write-Host "EXE: $app"
+          Write-Host "Deno: OK"
+          Write-Host "FFmpeg: OK"
+          Write-Host "bgutil: OK"
+          Write-Host "========================================"
+
+      # ==================================================
+      # WINDOWS ZIP
+      # ==================================================
 
       - name: Windows ZIP oluştur
         shell: pwsh
