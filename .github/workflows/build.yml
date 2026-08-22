@@ -1,0 +1,124 @@
+name: Fafatara Downloader Build
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+
+  # ==================================================
+  # WINDOWS
+  # ==================================================
+
+  windows:
+    name: Windows x64
+
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Repository'yi indir
+        uses: actions/checkout@v7
+
+      - name: Python 3.11 kur
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          architecture: x64
+
+      - name: Python paketlerini yükle
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Windows uygulamasını oluştur
+        shell: cmd
+        run: |
+          python -m PyInstaller ^
+            --noconfirm ^
+            --clean ^
+            --windowed ^
+            --onedir ^
+            --name "Fafatara Downloader" ^
+            --icon "assets/logo.ico" ^
+            --collect-all yt_dlp ^
+            --collect-all yt_dlp_ejs ^
+            main.py
+
+      - name: Windows ZIP oluştur
+        shell: powershell
+        run: |
+          Compress-Archive `
+            -Path "dist\Fafatara Downloader" `
+            -DestinationPath "Fafatara-Downloader-Windows-x64.zip"
+
+      - name: Windows paketini yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Fafatara-Downloader-Windows-x64
+          path: Fafatara-Downloader-Windows-x64.zip
+
+
+  # ==================================================
+  # LINUX
+  # ==================================================
+
+  linux:
+    name: Linux x64
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Repository'yi indir
+        uses: actions/checkout@v7
+
+      - name: Python 3.11 kur
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          architecture: x64
+
+      - name: Linux sistem paketlerini yükle
+        run: |
+          sudo apt-get update
+
+          sudo apt-get install -y \
+            python3-dev \
+            libegl1 \
+            libgl1 \
+            libxkbcommon-x11-0 \
+            libdbus-1-3
+
+      - name: Python paketlerini yükle
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Linux uygulamasını oluştur
+        run: |
+          chmod +x build_linux.sh
+          ./build_linux.sh
+
+      - name: Linux ZIP oluştur
+        run: |
+          tar -czf \
+            Fafatara-Downloader-Linux-x64.tar.gz \
+            -C dist \
+            "Fafatara Downloader"
+
+      - name: Linux paketini yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Fafatara-Downloader-Linux-x64
+          path: Fafatara-Downloader-Linux-x64.tar.gz

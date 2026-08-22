@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+
+# Downloaded files
+downloads/
+Downloads/
+
+# bgutil dependencies - yeniden kurulabilir
+tools/bgutil/bgutil-ytdlp-pot-provider/server/node_modules/
+
+# Node
+node_modules/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
