@@ -3,7 +3,7 @@ Fafatara Downloader, YouTube üzerinden müzik ve ses içeriklerini kolayca indi
 🌐 Language / Dil
 🇹🇷 Türkçe • 🇬🇧 English
 ---
----
+<a id="turkce"></a>
 🇹🇷 Türkçe
 🇬🇧 English'e geç
 📌 Proje Hakkında
@@ -86,6 +86,7 @@ Pull Request gönderebilir,
 Geliştirme önerilerinizi paylaşabilirsiniz.
 Katkılarınızı bekliyoruz! ❤️
 ---
+<a id="english"></a>
 🇬🇧 English
 🇹🇷 Türkçe'ye geç
 📌 About the Project
