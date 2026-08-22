@@ -28,6 +28,8 @@ jobs:
 
       - name: Repository'yi indir
         uses: actions/checkout@v7
+        with:
+          lfs: true
 
       - name: Python 3.11 kur
         uses: actions/setup-python@v7
@@ -43,10 +45,10 @@ jobs:
           python -m pip install pyinstaller
 
       # ==================================================
-      # BGUTIL SERVER HAZIRLA
+      # WINDOWS ARAÇLARI KONTROL
       # ==================================================
 
-      - name: Deno ve bgutil kontrolü
+      - name: Windows araçlarını kontrol et
         shell: pwsh
         run: |
           if (-not (Test-Path "tools\windows\deno.exe")) {
@@ -59,10 +61,25 @@ jobs:
             exit 1
           }
 
-          if (-not (Test-Path "tools\bgutil\bgutil-ytdlp-pot-provider\server\src\main.ts")) {
-            Write-Error "bgutil server kaynakları bulunamadı."
+          $denoSize = (Get-Item "tools\windows\deno.exe").Length
+          $ffmpegSize = (Get-Item "tools\windows\ffmpeg.exe").Length
+
+          Write-Host "Deno boyutu: $denoSize bytes"
+          Write-Host "FFmpeg boyutu: $ffmpegSize bytes"
+
+          if ($denoSize -lt 1000000) {
+            Write-Error "Deno gerçek binary olarak indirilmemiş görünüyor."
             exit 1
           }
+
+          if ($ffmpegSize -lt 100000) {
+            Write-Error "FFmpeg gerçek binary olarak bulunamadı."
+            exit 1
+          }
+
+      # ==================================================
+      # BGUTIL SERVER
+      # ==================================================
 
       - name: bgutil server bağımlılıklarını kur
         shell: pwsh
@@ -109,12 +126,12 @@ jobs:
           }
 
           if (-not (Test-Path "$root\_internal\tools\windows\deno.exe")) {
-            Write-Error "Paket içinde tools\windows\deno.exe bulunamadı."
+            Write-Error "Paket içinde deno.exe bulunamadı."
             exit 1
           }
 
           if (-not (Test-Path "$root\_internal\tools\windows\ffmpeg.exe")) {
-            Write-Error "Paket içinde tools\windows\ffmpeg.exe bulunamadı."
+            Write-Error "Paket içinde ffmpeg.exe bulunamadı."
             exit 1
           }
 
@@ -168,6 +185,8 @@ jobs:
 
       - name: Repository'yi indir
         uses: actions/checkout@v7
+        with:
+          lfs: true
 
       - name: Python 3.11 kur
         uses: actions/setup-python@v7
