@@ -1,38 +1,27 @@
 🦋 Fafatara Downloader
-Simple, fast and modern YouTube downloader for Windows.
-![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-8A2BE2?style=flat-square)
----
-🌐 Dil / Language
-🇹🇷 Türkçe
-🇬🇧 English
+> Simple, fast and modern YouTube downloader for Windows.
+🇹🇷 Türkçe · 🇬🇧 English
 ---
 🇹🇷 Türkçe
-Fafatara Downloader, YouTube bağlantılarından müzik, ses ve video içeriklerini kolayca indirmenizi sağlayan modern bir Windows masaüstü uygulamasıdır.
-🖥️ Uygulama Görüntüsü
-![Fafatara Downloader](./assets/app-screenshot.png)
+Fafatara Downloader, YouTube bağlantılarından müzik, ses ve video içeriklerini kolayca indirmenizi sağlayan sade ve kullanışlı bir Windows uygulamasıdır.
 ✨ Özellikler
-🎵 YouTube videolarından MP3 / ses indirme
-🎬 MP4 / video indirme
+🎵 Ses ve müzik indirme
+🎬 Video indirme
 📋 Playlist desteği
-🔗 YouTube bağlantısını kolayca yapıştırma
-🎚️ Ses kalitesi seçimi
-📁 İndirme klasörü seçme
+🎚️ Kalite seçimi
+📁 İndirme klasörü seçimi
 📊 İndirme ilerlemesini görüntüleme
-⚡ Hızlı ve sade kullanım
-🖥️ Modern PySide6 arayüzü
-⚙️ Uygulama ayarları
+⚙️ Kullanımı kolay ayarlar
 📦 Portable kullanım
+🖥️ Uygulama
+![Fafatara Downloader](./assets/app-screenshot.png)
 🚀 Kurulum
-Hazır sürüm — Önerilen
-Releases sayfasını açın.
-En son sürümü seçin.
-`.zip` dosyasını indirin.
+Hazır sürüm
+Releases sayfasına gidin.
+En son `.zip` dosyasını indirin.
 ZIP dosyasını çıkartın.
 `Fafatara-Downloader.exe` dosyasını çalıştırın.
-> Kurulum gerektirmez. ZIP'i çıkarttıktan sonra uygulamayı doğrudan çalıştırabilirsiniz.
-⬇️ Son sürümü indir
+Kurulum gerektirmez.
 Kaynak kodundan çalıştırma
 ```bash
 git clone https://github.com/FeyyazClskn/Fafatara-Downloader.git
@@ -40,59 +29,28 @@ cd Fafatara-Downloader
 python -m pip install -r requirements.txt
 python main.py
 ```
-🎯 Kullanım
-YouTube video veya playlist bağlantısını kopyalayın.
-Fafatara Downloader'ı açın.
-Bağlantıyı URL alanına yapıştırın.
-ANALİZ ET butonuna basın.
-Format, kalite ve indirme konumunu seçin.
-İNDİRMEYİ BAŞLAT butonuna basın.
-İndirme tamamlandığında dosyanızı seçtiğiniz klasörde bulabilirsiniz.
-⚙️ Dil Desteği
-Uygulamanın sonraki sürümünde Ayarlar → Dil bölümü bulunacaktır.
-Planlanan diller:
-🇬🇧 English — varsayılan
-🇹🇷 Türkçe
-🇩🇪 Deutsch
-🇪🇸 Español
-🇫🇷 Français
-🇮🇹 Italiano
-🇵🇹 Português
-🇷🇺 Русский
-🇨🇳 简体中文
-Seçilen dil uygulama yeniden açıldığında korunacaktır.
 ⚠️ Yasal Uyarı
-Fafatara Downloader teknik bir araçtır. İndirilen içeriklerin kullanımından kullanıcı sorumludur.
-YouTube'un kullanım koşullarına, telif haklarına ve içerik sahiplerinin haklarına uyulmalıdır. Uygulamayı yalnızca indirme hakkına veya gerekli izne sahip olduğunuz içerikler için kullanmanız önerilir.
-🤝 Katkıda Bulunma
-Hata bildirmek veya projeye katkıda bulunmak için GitHub üzerinden Issue veya Pull Request oluşturabilirsiniz.
+Uygulamayı yalnızca indirme hakkına sahip olduğunuz veya indirilmesine izin verilen içerikler için kullanın. Telif haklarına ve YouTube'un kullanım koşullarına uyun.
 🇬🇧 English bölümüne geç
 ---
 🇬🇧 English
-Fafatara Downloader is a modern Windows desktop application that makes it easy to download music, audio and video content from YouTube URLs.
-🖥️ Application Screenshot
-![Fafatara Downloader](./assets/app-screenshot.png)
+Fafatara Downloader is a simple and user-friendly Windows application for downloading music, audio and video content from YouTube URLs.
 ✨ Features
-🎵 MP3 / audio downloads from YouTube
-🎬 MP4 / video downloads
+🎵 Audio and music downloads
+🎬 Video downloads
 📋 Playlist support
-🔗 Easy YouTube URL input
-🎚️ Audio quality selection
+🎚️ Quality selection
 📁 Custom download location
 📊 Download progress tracking
-⚡ Fast and simple workflow
-🖥️ Modern PySide6 interface
-⚙️ Application settings
+⚙️ Easy-to-use settings
 📦 Portable usage
 🚀 Installation
-Pre-built version — Recommended
-Open the Releases page.
-Select the latest release.
-Download the `.zip` file.
+Pre-built version
+Go to the Releases page.
+Download the latest `.zip` file.
 Extract the ZIP archive.
 Run `Fafatara-Downloader.exe`.
-> No installation is required. Extract the ZIP and launch the application.
-⬇️ Download latest release
+No installation is required.
 Run from source
 ```bash
 git clone https://github.com/FeyyazClskn/Fafatara-Downloader.git
@@ -100,37 +58,8 @@ cd Fafatara-Downloader
 python -m pip install -r requirements.txt
 python main.py
 ```
-🎯 Usage
-Copy a YouTube video or playlist URL.
-Open Fafatara Downloader.
-Paste the URL into the input field.
-Click ANALYZE.
-Choose the format, quality and download location.
-Click START DOWNLOAD.
-When the download is complete, find the file in the selected folder.
-⚙️ Language Support
-The next version will include a Settings → Language section.
-Planned languages:
-🇬🇧 English — default
-🇹🇷 Türkçe
-🇩🇪 Deutsch
-🇪🇸 Español
-🇫🇷 Français
-🇮🇹 Italiano
-🇵🇹 Português
-🇷🇺 Русский
-🇨🇳 简体中文
-The selected language will be saved and restored when the application is opened again.
 ⚠️ Legal Disclaimer
-Fafatara Downloader is a technical tool. Users are responsible for how they use downloaded content.
-Please respect YouTube's Terms of Service, copyright laws and the rights of content creators. Use the application only for content that you have the legal right or permission to download.
-🤝 Contributing
-You can report bugs, suggest features or contribute to the project by opening an Issue or Pull Request on GitHub.
+Use the application only for content you have the right or permission to download. Please respect copyright laws and YouTube's Terms of Service.
 🇹🇷 Türkçe bölümüne geç
 ---
-⭐ Support
-If you find Fafatara Downloader useful, consider giving the repository a ⭐.
-⭐ Visit Fafatara Downloader
----
-🦋 Fafatara Downloader
-Made with ❤️ by Feyyaz
+🦋 Fafatara Downloader · Made with ❤️ by Feyyaz
